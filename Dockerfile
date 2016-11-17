@@ -14,4 +14,5 @@ ADD index.html /webroot/index.html
 RUN chown -R httpuser:httpuser /webroot
 
 WORKDIR /webroot
+USER httpuser
 CMD ["python","-m","SimpleHTTPServer"]
