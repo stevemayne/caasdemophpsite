@@ -13,4 +13,5 @@ EXPOSE 80
 
 ADD index.php /var/www/index.php
 
+USER www-data
 CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
